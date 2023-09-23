@@ -1,0 +1,4 @@
+todo: add github repository for the project.
+todo: add riverpod to the project as the project state manager.
+todo : add go_router as the default routing solution for the project.
+todo : add flexcolor theme theming to the project.
