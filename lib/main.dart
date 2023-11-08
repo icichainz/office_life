@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 final GoRouter _router  = GoRouter(
   routes : <RouteBase>[
@@ -74,19 +72,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  calculate_variation(size_one, s) {}
 
   @override
   Widget build(BuildContext context) {
-    final _boxList = List<FunctionCard>.generate(50, (index) => FunctionCard());
+    final _boxList = List<FunctionCard>.generate(50, (index) => const FunctionCard());
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
