@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
 
 void main() {
   runApp(const MyApp());
 }
 
+final GoRouter _router  = GoRouter(
+  routes : <RouteBase>[
+    GoRoute(
+      path: '/',
+      builder: (BuildContext context,GoRouterState state) {
+        return const MyHomePage(title: 'Office Life: Gestion de bureau') ;
+      }
+    )
+  ]
+);
 
 class FunctionCard extends StatelessWidget {
   const FunctionCard({super.key});
@@ -38,7 +50,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      restorationScopeId: 'app',
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -46,7 +59,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         useMaterial3: false,
       ),
-      home: const MyHomePage(title: 'Office Life: Gestion de bureau'),
+      routerConfig: _router,
     );
   }
 }
