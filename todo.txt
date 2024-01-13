@@ -1,5 +1,5 @@
-TODO: add github repository for the project (done).
-TODO: add riverpod to the project as the project state manager (done).
-TODO : add go_router as the default routing solution for the project (done).
-TODO : add flexcolor theme theming to the project(todo).
-TODO: add launch screen animation
+TODO:add github repository for the project (done).
+TODO: #3 add riverpod to the project as the project state manager (done).
+TODO #2 : add go_router as the default routing solution for the project (done).
+TODO: #4 add flexcolor theme theming to the project(todo).
+TODO: #1 add launch screen animation

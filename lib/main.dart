@@ -53,9 +53,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
-        primarySwatch: Colors.red,
-        useMaterial3: false,
+      
+        colorSchemeSeed: Colors.red,
+        useMaterial3: true,
       ),
       routerConfig: _router,
     );
@@ -80,7 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
         elevation: 0.0,
         title: Text(widget.title),
       ),
